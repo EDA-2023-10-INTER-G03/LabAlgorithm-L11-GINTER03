@@ -56,7 +56,6 @@ searchMethod = None
 def printMenu():
     print("\n")
     print("*******************************************")
-    # TODO Lab 11, asegurarse de completar las opciones 4, 9 y 10
     print("Bienvenido")
     print("1- Inicializar Analizador")
     print("2- Cargar información de buses de singapur")
