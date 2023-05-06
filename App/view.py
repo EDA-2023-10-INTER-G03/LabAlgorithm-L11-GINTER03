@@ -133,9 +133,9 @@ def optionTen(cont, destStation, searchMethod):
     path = controller.searchPathTo(cont, destStation, searchMethod)
     if path is not None:
         print (len(path))
+        print('el camino para llegar a ' + str(destStation) + ' fue el siguiente (se muestra desde el destino hasta la base): ')
         for cadauno in path:
             print(str(cadauno))
-        
     else:
         print('No hay camino')
 
