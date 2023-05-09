@@ -132,13 +132,13 @@ def optionNine(cont, destStation, searchMethod):
 def optionTen(cont, destStation, searchMethod):
     path = controller.searchPathTo(cont, destStation, searchMethod)
     if path is not None:
-        print (len(path))
-        print('el camino para llegar a ' + str(destStation) + ' fue el siguiente (se muestra desde el destino hasta la base): ')
-        for cadauno in path:
-            print(str(cadauno))
+        pathlen = stack.size(path)
+        print('El camino es de longitud: ' + str(pathlen))
+        while (not stack.isEmpty(path)):
+            stop = stack.pop(path)
+            print(stop)
     else:
-        print('No hay camino')
-
+        print('No existe un camino ')
 
 """
 Menu principal

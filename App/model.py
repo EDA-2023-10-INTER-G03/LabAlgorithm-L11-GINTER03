@@ -266,11 +266,8 @@ def searchPathTo(analyzer, destStation, method):
 
     elif method == "bfs":
         path = dfs.pathTo(analyzer['search'], destStation)
-    lista = []
-    for list in lt.iterator(path):
-        lista.append(list)
     
-    return lista
+    return path
 
 
 def totalStops(analyzer):
